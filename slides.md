@@ -99,7 +99,7 @@ level: 2
 
 Triggers allow only certain actions to trigger a specific workflow
 
-Workflows consist of jobs containing steps ...
+Workflows consist of jobs containing steps ..
 
 <style>
 h1 {
