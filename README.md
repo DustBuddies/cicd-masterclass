@@ -1,4 +1,6 @@
 # Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+[![Deploy](https://github.com/DustBuddies/cicd-masterclass/actions/workflows/deploy.yml/badge.svg)](https://github.com/DustBuddies/cicd-masterclass/actions/workflows/deploy.yml)
+
 
 To start the slide show:
 
