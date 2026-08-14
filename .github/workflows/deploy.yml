@@ -1,0 +1,25 @@
+# This workflow installs the dependencies and builds the code
+name: action
+
+on:
+  workflow_run:
+    workflows: ["build"]
+    types:
+      - completed
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    # Only deploy if the build workflow succeeded
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy
+        run: |
+          echo "Deploying..."
+          # Your deployment commands here
