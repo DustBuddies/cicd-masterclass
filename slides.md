@@ -1,4 +1,5 @@
 ---
+<!-- vale off -->
 # try also 'default' to start simple
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
@@ -22,6 +23,7 @@ transition: slide-left
 comark: true
 # duration of the presentation
 duration: 35min
+<!-- vale on -->
 ---
 
 # CI/CD
@@ -45,7 +47,7 @@ The SDLC (Software Development Life-Cycle) consists of seven phases:
 - Testing
 - Releasing
 - Deploying
-- Operating / Maintanance
+- Operating / Maintenance
 
 <!--
 TEST2

@@ -46,9 +46,10 @@ jobs:
         run: npm ci
 
       - name: Vale
-        uses: errata-ai/vale-action@v2
+        uses: vale-ai/vale-action@v2
         with:
           files: slides.md
+          fail_on_error: true
 
       - name: Build Slidev
         run: npm run build -- --base /${{ github.event.repository.name }}/
