@@ -25,7 +25,7 @@ Your deck now deploys automatically on every push to `main`. The next problem: w
 
 Run this experiment before implementing the solution:
 
-1. Push 2-3 small commits quickly to the same branch.2
+1. Push 2-3 small commits quickly to the same branch.3
 2. Observe the Actions queue behavior.
 3. Discuss: should all runs finish, or should stale runs be cancelled?
 
