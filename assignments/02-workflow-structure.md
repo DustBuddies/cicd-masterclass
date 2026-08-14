@@ -46,7 +46,7 @@ Create `.github/workflows/validate.yml` with these behaviors:
 - has a concurrency group per branch/ref
 - cancels stale in-progress runs
 - performs build validation only (no deploy)
-
+TEST
 Checkpoint:
 
 - Describe how your `group` expression prevents unrelated branches from cancelling each other.
