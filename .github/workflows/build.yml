@@ -46,7 +46,7 @@ jobs:
         run: npm ci
 
       - name: Vale
-        uses: vale-ai/vale-action@v2
+        uses: errata-ai/vale-action@v2
         with:
           files: slides.md
           fail_on_error: true
