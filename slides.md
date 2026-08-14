@@ -1,5 +1,4 @@
 ---
-<!-- vale off -->
 # try also 'default' to start simple
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
@@ -23,7 +22,6 @@ transition: slide-left
 comark: true
 # duration of the presentation
 duration: 35min
-<!-- vale on -->
 ---
 
 # CI/CD
