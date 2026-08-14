@@ -5,13 +5,12 @@ on:
     branches: ["main"]
 
   workflow_call:
+  workflow_dispatch:
     inputs:
       comment:
         description: 'optional manual input that captures operator intent'
         required: false
         type: string
-
-  workflow_dispatch:
 
 permissions:
   contents: read
