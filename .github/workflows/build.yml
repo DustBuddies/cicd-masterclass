@@ -5,14 +5,22 @@ on:
     branches: ["main"]
 
   workflow_call:
+    inputs:
+      comment:
+        description: 'optional manual input that captures operator intent'
+        required: false
+        type: string
+
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
 
     steps:
       - name: Checkout
@@ -39,11 +47,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     environment:
       name: github-pages
