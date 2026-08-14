@@ -25,9 +25,11 @@ Your deck now deploys automatically on every push to `main`. The next problem: w
 
 Run this experiment before implementing the solution:
 
-1. Push 2-3 small commits quickly to the same branch.3
+1. Push 2-3 small commits quickly to the same branch.
 2. Observe the Actions queue behavior.
+- Queues pipelines for each commit and runs them one by one
 3. Discuss: should all runs finish, or should stale runs be cancelled?
+- Earlier runs should be cancelled, since you probably only care about the latest commit
 
 Capture your team decision and reason in one sentence.
 
