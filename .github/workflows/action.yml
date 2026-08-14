@@ -1,0 +1,25 @@
+# This workflow installs the dependencies and builds the code
+name: action
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  install_dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install the dependencies
+        run: npm install
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Builds the code
+        run: npm run build
